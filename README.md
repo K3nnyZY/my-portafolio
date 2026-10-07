@@ -1,6 +1,6 @@
 # Kenny Zhu Portfolio
 
-A bilingual portfolio built with **Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS 4**. Content is adapted from Kenny's résumé, with original CSS/SVG illustrations rather than borrowed project screenshots.
+A bilingual portfolio built with **Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS 4**. Content is adapted from my resume, with original CSS/SVG illustrations rather than borrowed project screenshots.
 
 ## Development
 
