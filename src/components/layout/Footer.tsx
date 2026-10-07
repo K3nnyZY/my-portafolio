@@ -1,21 +1,25 @@
-const footerLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#achievements", label: "Achievements" },
-  { href: "#contact", label: "Contact" },
-];
+import { FiArrowUp } from "react-icons/fi";
+import Container from "@/components/layout/Container";
+import type { PortfolioContent } from "@/types/portfolio";
 
-const socialLinks = [
-  { href: "https://www.linkedin.com/in/kennyzhuye/", label: "in" },
-  { href: "https://github.com/K3nnyZY", icon: "/github.svg", alt: "GitHub" },
-];
-
-export default function Footer() {
+export default function Footer({ content }: { content: PortfolioContent }) {
   return (
-    <footer className="mt-20 border-t bg-black py-6 text-center">
-        <p className="text-sm text-white">
-          © 2026 Kenny Zhu. All rights reserved.
+    <footer className="site-footer">
+      <Container className="footer-container">
+        <div>
+          <a className="brand-name" href="#home">
+            Kenny Zhu
+          </a>
+          <p>{content.footer.description}</p>
+        </div>
+        <p>
+          © {new Date().getFullYear()} Kenny Zhu {content.footer.rights}
         </p>
+        <a className="back-top" href="#home">
+          {content.footer.top}
+          <FiArrowUp aria-hidden="true" />
+        </a>
+      </Container>
     </footer>
   );
 }
